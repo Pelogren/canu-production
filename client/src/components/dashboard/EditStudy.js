@@ -115,7 +115,7 @@ class EditStudy extends React.Component {
         }
 
         // put request to change study data on server
-        axios.put(`/study/${this.props.userID}/` + this.props.studyID, editedStudy)
+        axios.put(`/api/study/${this.props.userID}/` + this.props.studyID, editedStudy)
             .then(res => {
                 console.log(res);
                 this.props.action();

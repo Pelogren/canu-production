@@ -18,7 +18,7 @@ class StudyList extends React.Component {
     // set study data
     componentDidMount() {
 
-        axios.get(`/study/${this.props.userID}`)
+        axios.get(`/api/study/${this.props.userID}`)
             .then(res => {
                 this.setState({
                     studies: res.data,
@@ -34,7 +34,7 @@ class StudyList extends React.Component {
     componentDidUpdate(prevProps, prevState) {
         if (prevState.isUpdated !== this.state.isUpdated) {
 
-            axios.get(`/study/${this.props.userID}`)
+            axios.get(`/api/study/${this.props.userID}`)
                 .then(res => {
                     console.log(res);
                     this.setState({

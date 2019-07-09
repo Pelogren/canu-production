@@ -17,7 +17,7 @@ class Tasks extends React.Component {
     componentDidMount() {
 
         // get study and group specific tasks
-        axios.get(`/solution/${this.props.match.params.studyid}/${this.props.match.params.groupid}`)
+        axios.get(`/api/solution/${this.props.match.params.studyid}/${this.props.match.params.groupid}`)
             .then(res => {
                 this.setState({
                     tasks: res.data,

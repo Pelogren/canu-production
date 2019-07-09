@@ -26,7 +26,7 @@ class ICAA extends React.Component {
     this.props.incrementSequenceCounter();
     console.log(survey.data);
     axios
-      .post(`/ICAA`, survey.data)
+      .post(`/api/ICAA`, survey.data)
       .then(res => {
         console.log(res.data);
       })

@@ -24,7 +24,7 @@ class APM extends React.Component {
     this.props.incrementSequenceCounter();
 
     axios
-      .post(`/APM`, survey.data)
+      .post(`/api/APM`, survey.data)
       .then(res => {
         console.log(res.data);
       })

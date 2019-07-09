@@ -35,7 +35,7 @@ class DeleteStudy extends React.Component {
         e.preventDefault();
 
         // delete request to server with user and study parameters
-        axios.delete(`/study/${this.props.userID}/` + this.props.studyID)
+        axios.delete(`/api/study/${this.props.userID}/` + this.props.studyID)
             .then(res => {
                 console.log(res);
                 this.props.action();

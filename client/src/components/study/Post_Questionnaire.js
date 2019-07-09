@@ -20,7 +20,7 @@ class Post_Questionnaire extends React.Component {
     this.setState({ isCompleted: true });
     console.log(survey.data);
     axios
-      .post(`/Post_Questionnaire`, survey.data)
+      .post(`/api/Post_Questionnaire`, survey.data)
       .then(res => {
         console.log(res.data);
       })

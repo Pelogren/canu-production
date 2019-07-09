@@ -19,7 +19,7 @@ class Dashboard extends React.Component {
 
     componentDidMount() {
         // get all studies to pass as props to child components
-        axios.get(`/study/${this.props.userID}`)
+        axios.get(`/api/study/${this.props.userID}`)
             .then(res => {
                 this.setState({
                     studies: res.data

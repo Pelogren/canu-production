@@ -28,7 +28,7 @@ class SidebarDashboard extends Component {
     componentDidMount() {
 
         // fetch studies based on logged in user id
-        axios.get(`/study/${this.props.userID}`)
+        axios.get(`/api/study/${this.props.userID}`)
             .then(res => {
                 this.setState({
                     studies: res.data,

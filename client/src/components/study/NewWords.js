@@ -38,8 +38,8 @@ class NewWords extends Component {
 
     axios
       .get(
-        `/solution/${this.props.match.params.studyid}/${
-          this.props.match.params.groupid
+        `/api/solution/${this.props.match.params.studyid}/${
+        this.props.match.params.groupid
         }`
       )
       .then(res => {
@@ -173,7 +173,7 @@ class NewWords extends Component {
     });
 
     // helper function to get nth index of a character that exists multiple times
-    Array.prototype.nthIndexOf = function(e, n) {
+    Array.prototype.nthIndexOf = function (e, n) {
       var index = -1;
       for (var i = 0, len = this.length; i < len; i++) {
         if (i in this && e === this[i] && !--n) {
@@ -238,8 +238,8 @@ class NewWords extends Component {
     // post new solution to server
     axios
       .post(
-        `/solution/${this.props.match.params.studyid}/${
-          this.props.match.params.groupid
+        `/api/solution/${this.props.match.params.studyid}/${
+        this.props.match.params.groupid
         }`,
         solutionObject
       )
@@ -279,8 +279,8 @@ class NewWords extends Component {
     // post new solution to server
     axios
       .post(
-        `/solution/${this.props.match.params.studyid}/${
-          this.props.match.params.groupid
+        `/api/solution/${this.props.match.params.studyid}/${
+        this.props.match.params.groupid
         }`,
         solutionObject
       )
@@ -356,14 +356,14 @@ class NewWords extends Component {
                     Aufgabe abschließen
                   </button>
                 ) : (
-                  <button
-                    className="next-btn"
-                    disabled={this.state.values.every(el => el.length === 0)}
-                    onClick={this.handleNext}
-                  >
-                    Nächste Aufgabe
+                    <button
+                      className="next-btn"
+                      disabled={this.state.values.every(el => el.length === 0)}
+                      onClick={this.handleNext}
+                    >
+                      Nächste Aufgabe
                   </button>
-                )}
+                  )}
               </form>
             </div>
           </div>

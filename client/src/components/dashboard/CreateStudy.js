@@ -109,7 +109,7 @@ class CreateStudy extends React.Component {
 
 
         // Post request with logged in user id and created study object
-        axios.post(`/study/${this.props.userID}`, newStudy)
+        axios.post(`/api/study/${this.props.userID}`, newStudy)
             .then(res => {
                 this.props.action();
                 console.log(res.data)
