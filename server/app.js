@@ -83,11 +83,11 @@ app.use(passport.initialize());
 require("./config/passport")(passport);
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/solution', solutionRouter);
-app.use('/study', studyRouter);
+app.use('/api/users', usersRouter);
+app.use('/api/solution', solutionRouter);
+app.use('/api/study', studyRouter);
 
-app.use('/insertTasks', insertTaskRouter);
+app.use('/api/insertTasks', insertTaskRouter);
 
 // Deployment Test
 app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
@@ -99,9 +99,9 @@ app.get('/*', function (req, res) {
 });
 
 
-app.use('/Post_Questionnaire', Post_QuestionnaireRouter);
-app.use('/APM', APMRouter);
-app.use('/ICAA', ICAARouter);
+app.use('/api/Post_Questionnaire', Post_QuestionnaireRouter);
+app.use('/api/APM', APMRouter);
+app.use('/api/ICAA', ICAARouter);
 
 // //LogIn Barrier
 // function auth(req, res, next) {
