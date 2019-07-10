@@ -28,5 +28,8 @@ App runs in development mode on http://localhost:3000, Server runs on http://loc
 The project is now hosted on the server and available via http://creativity.lfe.mw.tum.de
 
 ### Nginx
+go to `/etc/nginx` and execute `$ sudo service nginx restart`
+
 The Client is served on `port :80`
-Everything with the url `.../api/...` is rerouted to `por t:3000`
+
+Everything with the url `.../api/...` is rerouted to `port :3000`
