@@ -23,7 +23,7 @@ class BlocksInstruction extends React.Component {
                 Ziel der Aufgabe ist es, möglichst die gesamte Fläche mit den
                 Elementen zu bedecken
               </span>
-              . Jedes Element steht mehrfach zur Verfügung und wird mittels
+              . Jedes Element steht mehrfach zur Verfügung, wird mittels
               Drag-and-drop in die gewünschte Position verschoben und kann
               mittels rechtem Mausklick rotiert werden.{" "}
               <span>
