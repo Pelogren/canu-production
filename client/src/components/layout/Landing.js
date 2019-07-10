@@ -78,10 +78,10 @@ const Landing = () => (
           <Link to="/login" className="log-in-button">
             Log In
               </Link>
-          {/* temporarily disabled during initial data acquisition, so no one accidentally registers a new account
+          <!-- temporarily disabled during initial data acquisition, so no one accidentally registers a new account
           <Link to="/signup" className="sign-up-button">
             Sign Up
-              </Link> */}
+              </Link> -->
         </div>
         <svg className="blob-left" xmlns="http://www.w3.org/2000/svg" width="387.042" height="407.123">
           <path d="M387.042 407.124H0V.001a93.344 93.344 0 0 1 17.56 11.958 88.974 88.974 0 0 1 14.962 16.753 92.781 92.781 0 0 1 7.47 12.989 99.512 99.512 0 0 1 5.231 13.652 129.524 129.524 0 0 1 5.023 28.908 241.09 241.09 0 0 1-.094 30.4c-.6 10.3-1.642 20.884-2.649 31.118-.994 10.094-2.021 20.526-2.619 30.647a241.51 241.51 0 0 0-.154 29.848 128.524 128.524 0 0 0 4.77 28.3 97.748 97.748 0 0 0 5 13.339 90.384 90.384 0 0 0 7.154 12.674c6.361 9.4 11.235 16.248 15.8 22.22a181.926 181.926 0 0 0 15.008 17.507 107.207 107.207 0 0 0 15.949 13.414 100.073 100.073 0 0 0 18.627 9.946 145.863 145.863 0 0 0 23.042 7.1 286.889 286.889 0 0 0 29.194 4.881c19.864 2.406 44.924 4.079 83.793 5.6a190.19 190.19 0 0 1 22.506 2.193 166.626 166.626 0 0 1 20.277 4.532 148.113 148.113 0 0 1 34.317 14.852c18.188 10.834 33.958 25.734 46.871 44.288z" fill="#fbe557" />
