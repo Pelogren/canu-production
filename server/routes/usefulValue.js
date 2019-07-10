@@ -29,7 +29,7 @@ function usefulValue(req, next, callback) {
                     }
                     else {
                         var re = new RegExp('^' + req.body.solution[i] + '$');
-                        var words = require('an-array-of-english-words');
+                        var words = require('an-array-of-german-words');
                         var Word = words.filter(word => word.match(re));
                         //wort.push(Word);
                         if (Word == '') {
