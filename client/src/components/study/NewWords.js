@@ -215,6 +215,10 @@ class NewWords extends Component {
   handleKeyPress(i, event) {
     let regex = new RegExp("[" + this.state.allowedChars.join("") + "]", "i");
 
+    if (event.key == 'Enter') {
+      this.addClick();
+    }
+    
     if (!regex.test(event.key.toUpperCase())) {
       this.setState({ shake: !this.state.shake });
       event.preventDefault();
@@ -349,6 +353,7 @@ class NewWords extends Component {
                 {this.createUI()}
                 {this.props.counter === this.props.total - 1 ? (
                   <button
+                    type="button"
                     className="next-btn"
                     disabled={this.state.values.every(el => el.length === 0)}
                     onClick={this.handleNext}
@@ -357,6 +362,7 @@ class NewWords extends Component {
                   </button>
                 ) : (
                     <button
+                      type="button"
                       className="next-btn"
                       disabled={this.state.values.every(el => el.length === 0)}
                       onClick={this.handleNext}
