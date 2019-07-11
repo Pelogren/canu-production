@@ -477,7 +477,7 @@ class Post_Questionnaire extends React.Component {
               type: "html",
               name: "info_Rückfragen",
               html:
-                "Für Rückfragen oder Anmerkungen stehen wir Ihnen gerne zur Verfügung: Lorenz Prasch (lorenz.prasch@tum.de)"
+                "Für Fragen stehen wir Ihnen gerne zur Verfügung: Lorenz Prasch (lorenz.prasch@tum.de)"
             }
           ]
         }

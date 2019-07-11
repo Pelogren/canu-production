@@ -533,6 +533,7 @@ studyRouter.route('/:userId/:studyId/download')
                   Future_participant: questionnaires[i].subsequent_questionnaire,
                   Competition: questionnaires[i].competition,
                   Feedback: questionnaires[i].feedback,
+                  Comment: questionnaires[i].comment,
                   APM_7: apm_aktuell.APM_7,
                   APM_8: apm_aktuell.APM_8,
                   APM_9: apm_aktuell.APM_9,

@@ -37,6 +37,7 @@ Post_QuestionnaireRouter.route('/')
         },
         email: req.body.email,
         code: req.body.code,
+        comment: req.body.comment,
         subsequent_questionnaire: req.body.subsequent_questionnaire,
         competition: req.body.competition,
         feedback: req.body.feedback
