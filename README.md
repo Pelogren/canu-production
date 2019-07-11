@@ -21,6 +21,7 @@ App runs in development mode on http://localhost:3000, Server runs on http://loc
 
 1. Build the Client:
 `cd client && npm run build`
+
 In case the changes do not take affect, remove and reinstall node components:
 ```
     rm -rf nodes_modules/
