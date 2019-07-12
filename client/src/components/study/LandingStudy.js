@@ -40,9 +40,9 @@ class LandingStudy extends React.Component {
               <br />
               <span>
                 Bitte beachten Sie, dass diese Studie nicht für die Durchführung
-                mit einem Smartphone geeignet ist.&nbsp;
+                mit einem Smartphone oder Tablet geeignet ist.&nbsp;
               </span>
-              Nutzen Sie einen PC, einen Laptop oder ein Tablet. Bitte lesen Sie
+              Nutzen Sie einen PC oder einen Laptop. Bitte lesen Sie
               sich jede Frage bzw. jede Aufgabenstellung in Ruhe durch und
               beantworten Sie diese. Für einige Aufgaben ist eine maximale Bearbeitungsdauer vorgegeben. Die Datenerhebung gilt ausschließlich der
               Evaluation des Messinstruments. Sie als Proband können nichts
