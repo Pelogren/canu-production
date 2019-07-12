@@ -423,7 +423,7 @@ class Post_Questionnaire extends React.Component {
               isRequired: this.state.requiredQ,
               title: {
                 de:
-                  "Möchten Sie, dass wir Ihnen nach Abschluss unserer Studie Ihren Kreativitätsscore mitteilen? Dieser wird basierend auf der Blocks- und der Neue Wörter-Aufgabe bestimmt."
+                  "Möchten Sie, dass wir Ihnen nachträglich nach Abschluss der Studie und Auswertung aller Probanden Ihren Kreativitätsscore mitteilen? Dieser wird basierend auf der Blocks- und der Neue Wörter-Aufgabe bestimmt."
               },
               choices: [
                 {
@@ -474,6 +474,11 @@ class Post_Questionnaire extends React.Component {
               ]
             },
             {
+              type: "text",
+              name: "comment",
+              title: "Haben Sie noch Anmerkungen zu dieser Studie?"
+            },
+            {
               type: "html",
               name: "info_Rückfragen",
               html:
@@ -522,7 +527,7 @@ class Post_Questionnaire extends React.Component {
     var onCompleteComponent = this.state.isCompleted
       ? this.props.incrementSequenceCounter()
       : // this.props.history.push("/finished")
-      null;
+        null;
 
     return (
       <div>

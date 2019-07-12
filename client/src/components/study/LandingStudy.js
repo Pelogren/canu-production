@@ -25,11 +25,11 @@ class LandingStudy extends React.Component {
               Sehr geehrte Teilnehmerin, sehr geehrter Teilnehmer,
               <br />
               <br />
-              vielen Dank, dass Sie uns bei unserer Forschung unterstützen
-              möchten! Diese Studie wird im Rahmen eines interdisziplinären
-              Projekts vom Lehrstuhl für Ergonomie an der Technischen
-              Universität München durchgeführt. Projektverantwortlicher ist Herr
-              Lorenz Prasch, M.Sc.
+              vielen Dank, dass Sie diese Forschungsarbeit unterstützen möchten!
+              Diese Studie wird im Rahmen eines interdisziplinären Projekts vom
+              Lehrstuhl für Ergonomie an der Technischen Universität München
+              durchgeführt. Projektverantwortlicher ist Herr Lorenz Prasch,
+              M.Sc.
               <br />
               <br />
               Gegenstand dieser Studie ist ein neu entwickeltes Messinstrument
@@ -42,12 +42,12 @@ class LandingStudy extends React.Component {
                 Bitte beachten Sie, dass diese Studie nicht für die Durchführung
                 mit einem Smartphone oder Tablet geeignet ist.&nbsp;
               </span>
-              Nutzen Sie einen PC oder einen Laptop. Bitte lesen Sie
-              sich jede Frage bzw. jede Aufgabenstellung in Ruhe durch und
-              beantworten Sie diese. Für einige Aufgaben ist eine maximale Bearbeitungsdauer vorgegeben. Die Datenerhebung gilt ausschließlich der
-              Evaluation des Messinstruments. Sie als Proband können nichts
-              falsch machen. Die Bearbeitung der Studie wird ca. 25 Minuten in
-              Anspruch nehmen.
+              Nutzen Sie einen PC oder einen Laptop. Bitte lesen Sie sich jede
+              Frage bzw. jede Aufgabenstellung in Ruhe durch und beantworten Sie
+              diese. Für einige Aufgaben ist eine maximale Bearbeitungsdauer
+              vorgegeben. Die Datenerhebung gilt ausschließlich der Evaluation
+              des Messinstruments. Sie als Proband können nichts falsch machen.
+              Die Bearbeitung der Studie wird ca. 25 Minuten in Anspruch nehmen.
               <br />
               <br />
               Unter den Teilnehmenden werden Amazon-Gutscheine im Wert von 3 x
@@ -74,8 +74,8 @@ class LandingStudy extends React.Component {
               Informationen zu.
               <br />
               <br />
-              Für Rückfragen oder Anmerkungen stehen wir Ihnen gerne zur
-              Verfügung: Lorenz Prasch (lorenz.prasch@tum.de)
+              Wenden Sie sich bei Fragen oder Anmerkungen gerne an Lorenz Prasch
+              (lorenz.prasch@tum.de).
               <br />
               <br />
               Technische Universität München:
@@ -86,7 +86,7 @@ class LandingStudy extends React.Component {
               <Link to={this.state.link} className="btn">
                 Start
               </Link>
-              <br/>
+              <br />
             </div>
           </div>
         </div>

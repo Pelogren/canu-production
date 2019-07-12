@@ -21,18 +21,15 @@ class BlocksInstruction extends React.Component {
               beliebig auf der Fläche anordnen.{" "}
               <span>
                 Ziel der Aufgabe ist es, möglichst die gesamte Fläche mit den
-                Elementen zu bedecken
+                Elementen zu bedecken. Jedes Element steht mehrfach zur
+                Verfügung, wird mittels Drag-and-drop in die gewünschte Position
+                verschoben und kann mittels rechtem Mausklick rotiert
+                werden.&nbsp;
               </span>
-              . Jedes Element steht mehrfach zur Verfügung, wird mittels
-              Drag-and-drop in die gewünschte Position verschoben und kann
-              mittels rechtem Mausklick rotiert werden.{" "}
-              <span>
-                Es ist möglich, die Elemente so zu platzieren, dass sie über die
-                Fläche hinausragen, wodurch jedoch die Qualität der Lösung
-                reduziert wird
-              </span>
-              . Bei der Positionierung ist keine Überlappung mit anderen
-              Elementen zulässig.
+              Es ist möglich, die Elemente so zu platzieren, dass sie über die
+              Fläche hinausragen, wodurch jedoch die Qualität der Lösung
+              reduziert wird. Bei der Positionierung ist keine Überlappung mit
+              anderen Elementen zulässig.
               <br />
               <br />
               Insgesamt werden Sie <span>vier Aufgaben</span> mit jeweils
