@@ -15,6 +15,13 @@ class BlocksInstruction extends React.Component {
         <div className="home-content">
           <div className="right">
             <p>
+              <span2>
+                Bitte lesen Sie die folgenden Instruktionen gründlich. Wöhrend
+                der Bearbeitung der Aufgaben haben Sie keine Möglichkeiten
+                zurück zu springen.
+              </span2>
+              <br />
+              <br />
               In dem folgenden Abschnitt besteht die Aufgabe darin, die rechts
               dargestellte, dunkelgraue Fläche mit den grünen Elementen links
               möglichst vollständig auszufüllen. Sie können die Elemente
@@ -32,10 +39,9 @@ class BlocksInstruction extends React.Component {
               anderen Elementen zulässig.
               <br />
               <br />
-              Insgesamt werden Sie <span>vier Aufgaben</span> mit jeweils
-              unterschiedlich geformten Flächen bearbeiten. Für jede Aufgabe
-              haben Sie <span>drei Minuten Zeit</span>, danach gilt sie als
-              beendet.{" "}
+              Insgesamt werden Sie vier Aufgaben mit jeweils unterschiedlich
+              geformten Flächen bearbeiten. Für jede Aufgabe haben Sie drei
+              Minuten Zeit, danach gilt sie als beendet.{" "}
               <span>
                 Versuchen Sie, die vorgegebene Fläche so vollständig wie möglich
                 mit den vorgegebenen Elementen zu füllen und dabei Muster zu

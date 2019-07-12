@@ -39,7 +39,7 @@ class NewWords extends Component {
     axios
       .get(
         `/api/solution/${this.props.match.params.studyid}/${
-        this.props.match.params.groupid
+          this.props.match.params.groupid
         }`
       )
       .then(res => {
@@ -173,7 +173,7 @@ class NewWords extends Component {
     });
 
     // helper function to get nth index of a character that exists multiple times
-    Array.prototype.nthIndexOf = function (e, n) {
+    Array.prototype.nthIndexOf = function(e, n) {
       var index = -1;
       for (var i = 0, len = this.length; i < len; i++) {
         if (i in this && e === this[i] && !--n) {
@@ -215,10 +215,10 @@ class NewWords extends Component {
   handleKeyPress(i, event) {
     let regex = new RegExp("[" + this.state.allowedChars.join("") + "]", "i");
 
-    if (event.key == 'Enter') {
+    if (event.key == "Enter") {
       this.addClick();
     }
-    
+
     if (!regex.test(event.key.toUpperCase())) {
       this.setState({ shake: !this.state.shake });
       event.preventDefault();
@@ -243,7 +243,7 @@ class NewWords extends Component {
     axios
       .post(
         `/api/solution/${this.props.match.params.studyid}/${
-        this.props.match.params.groupid
+          this.props.match.params.groupid
         }`,
         solutionObject
       )
@@ -284,7 +284,7 @@ class NewWords extends Component {
     axios
       .post(
         `/api/solution/${this.props.match.params.studyid}/${
-        this.props.match.params.groupid
+          this.props.match.params.groupid
         }`,
         solutionObject
       )
@@ -333,6 +333,9 @@ class NewWords extends Component {
                 Versuchen Sie, so viele Buchstaben wie möglich zu nutzen und
                 dabei deutsche Wörter zu bilden, die möglich sind, aber nicht
                 jedem einfallen.
+                <br />
+                Tippen Sie die Wörter mit Ihrer <span>Tastatur</span> ein und
+                fügen Sie neue Wörter mit dem <span>'+'-Icon</span> hinzu.
               </p>
             </div>
             <Countdown
@@ -361,15 +364,15 @@ class NewWords extends Component {
                     Aufgabe abschließen
                   </button>
                 ) : (
-                    <button
-                      type="button"
-                      className="next-btn"
-                      disabled={this.state.values.every(el => el.length === 0)}
-                      onClick={this.handleNext}
-                    >
-                      Nächste Aufgabe
+                  <button
+                    type="button"
+                    className="next-btn"
+                    disabled={this.state.values.every(el => el.length === 0)}
+                    onClick={this.handleNext}
+                  >
+                    Nächste Aufgabe
                   </button>
-                  )}
+                )}
               </form>
             </div>
           </div>

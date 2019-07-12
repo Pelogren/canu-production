@@ -15,15 +15,22 @@ class NewWordsInstruction extends React.Component {
         <div className="home-content">
           <div className="right">
             <p>
+              <span2>
+                Bitte lesen Sie die folgenden Instruktionen gründlich. Wöhrend
+                der Bearbeitung der Aufgaben haben Sie keine Möglichkeiten
+                zurück zu springen.
+              </span2>
+              <br />
+              <br />
               In dem folgenden Abschnitt sollen Sie aus den vorgegebenen
               Buchstaben deutsche Wörter bilden, sodass im Idealfall kein
               einziger Buchstabe übrig bleibt. Jeder vorgegebene Buchstabe darf
               nur einmal verwendet werden. Die von Ihnen gebildeten deutschen
               Wörter werden als gültig gewertet, wenn sie{" "}
-              <span>korrekt geschrieben sind</span>. Insgesamt werden Sie{" "}
-              <span>vier Aufgaben</span> mit jeweils unterschiedlichen
-              Buchstaben bearbeiten. Für jede Aufgabe haben Sie{" "}
-              <span>drei Minuten Zeit</span>, danach gilt sie als beendet.{" "}
+              <span>korrekt geschrieben sind</span>. Insgesamt werden Sie vier
+              Aufgaben mit jeweils unterschiedlichen Buchstaben bearbeiten. Für
+              jede Aufgabe haben Sie drei Minuten Zeit, danach gilt sie als
+              beendet.{" "}
               <span>
                 Versuchen Sie, so viele Buchstaben wie möglich zu nutzen und
                 dabei deutsche Wörter zu bilden, die möglich sind, aber nicht
