@@ -16,9 +16,9 @@ class NewWordsInstruction extends React.Component {
           <div className="right">
             <p>
               <span2>
-                Bitte lesen Sie die folgenden Instruktionen gründlich. Wöhrend
+                Bitte lesen Sie die folgenden Instruktionen gründlich. Während
                 der Bearbeitung der Aufgaben haben Sie keine Möglichkeiten
-                zurück zu springen.
+                zurückzuspringen.
               </span2>
               <br />
               <br />
