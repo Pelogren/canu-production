@@ -441,9 +441,7 @@ class APM extends React.Component {
         <div className="questionnaire-description">
           <div className="wrapper">
             <div className="task-heading">
-              <span className="task-number-questionnaire">
-                {this.props.index + 1}
-              </span>
+              <span className="task-number-questionnaire">3</span>
               <h1 className="questionnaire-heading">
                 Schlussfolgerndes Denken
               </h1>
