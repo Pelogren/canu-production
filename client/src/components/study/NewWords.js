@@ -324,9 +324,7 @@ class NewWords extends Component {
           <div className="newWords-description">
             <div className="wrapper">
               <div className="task-heading">
-                <span className="task-number-newWords">
-                  {this.props.index + 1}
-                </span>
+                <span className="task-number-newWords">1</span>
                 <h1 className="newWords-heading">Neue Wörter</h1>
               </div>
               <p className="newWords-task-description">

@@ -734,9 +734,7 @@ class ICAA extends React.Component {
         <div className="questionnaire-description">
           <div className="wrapper">
             <div className="task-heading">
-              <span className="task-number-questionnaire">
-                {this.props.index + 1}
-              </span>
+              <span className="task-number-questionnaire">2</span>
               <h1 className="questionnaire-heading">Kreative Aktivitäten</h1>
             </div>
             <p className="questionnaire-task-description">
