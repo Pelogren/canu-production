@@ -18,28 +18,28 @@ class StudySequence extends React.Component {
     super();
 
     const componentArray = [
-      {
-        type: Tasks,
-        props: {
-          tasks: this.state.tasks,
-          incrementSequenceCounter: this.incrementSequenceCounter,
-          count: this.state.count
-        }
-      },
       // {
-      //   type: APM,
+      //   type: Tasks,
       //   props: {
+      //     tasks: this.state.tasks,
       //     incrementSequenceCounter: this.incrementSequenceCounter,
       //     count: this.state.count
       //   }
       // },
-      {
-        type: ICAA,
-        props: {
-          incrementSequenceCounter: this.incrementSequenceCounter,
-          count: this.state.count
-        }
-      }
+      // // {
+      // //   type: APM,
+      // //   props: {
+      // //     incrementSequenceCounter: this.incrementSequenceCounter,
+      // //     count: this.state.count
+      // //   }
+      // // },
+      // {
+      //   type: ICAA,
+      //   props: {
+      //     incrementSequenceCounter: this.incrementSequenceCounter,
+      //     count: this.state.count
+      //   }
+      // }
     ];
 
     const shuffledArray = this.shuffle(componentArray);
@@ -76,9 +76,20 @@ class StudySequence extends React.Component {
 
     switch (count) {
       case 1:
-        return this.state.shuffledArray[0];
+        return (
+          <Tasks
+            tasks={this.state.tasks}
+            incrementSequenceCounter={this.incrementSequenceCounter}
+            count={this.state.count}
+          />
+        );
       case 2:
-        return this.state.shuffledArray[1];
+        return (
+          <ICAA
+            incrementSequenceCounter={this.incrementSequenceCounter}
+            count={this.state.count}
+          />
+        );
       case 3:
         return (
           <APM
